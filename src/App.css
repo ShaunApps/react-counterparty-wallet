@@ -1,0 +1,18 @@
+.App {
+  margin: auto;
+  width: 630px;
+  border: 10px solid;
+  padding: 0px 23px 23px 23px;
+  margin-top:15px;
+}
+
+input {
+  width: 220px;
+  padding: 12px 12px;
+  margin: 8px 0;
+  font-size: 15px; 
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
