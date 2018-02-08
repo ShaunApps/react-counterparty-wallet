@@ -2,8 +2,12 @@
   margin: auto;
   width: 630px;
   border: 10px solid;
+  border-radius: 25px;
+  border-color: white;
   padding: 0px 23px 23px 23px;
   margin-top:15px;
+  color: white;
+  background: #212121;
 }
 
 input {

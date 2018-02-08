@@ -9,7 +9,11 @@ import { createStore, applyMiddleware } from 'redux';
 // import ReduxPromise from 'redux-promise';
 // import { Router, hashHistory } from 'react-router';
 import reducers from './reducers';
+import { loadState } from './localStorage';
+
 // import routes from './routes';
+
+// const persistedState = loadState();
 
 let store = createStore(reducers);
 

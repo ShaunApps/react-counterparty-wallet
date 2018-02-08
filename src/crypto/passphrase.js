@@ -1,3 +1,6 @@
+// This page mostly taken from https://github.com/Jpja/vanilla-xcp/blob/master/js/passphrase.js
+
+
 const bitcoin = require('bitcoinjs-lib');
 
 //returns STRING with a 12 word passprase
@@ -107,7 +110,7 @@ function newPassphrase_arr_ind() {
 //small letters and digits only for ease of typing
 //8 characters is ~40 bit entropy
 //can be brute forced but hacker needs access to your local computer to get encrypted passphrase
-function newPassword(length) {
+export function newPassword(length) {
     if (typeof length === 'undefined') { length = 8; }
     var pw = "";
     var chars = "abcdefghijkmnopqrstuvwxyz023456789";
