@@ -1,12 +1,4 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import bitcoin from 'bitcoinjs-lib';
-import bip39 from 'bip39';
-import Crypto from 'crypto-js';
-
-import { newPassPhraseAndAddress } from '../actions/index';
-
-import Address from '.././components/address';
+import React from 'react';
 
 const ShowNewWallet = (props) => {
     return(
@@ -15,6 +7,12 @@ const ShowNewWallet = (props) => {
             <p>Wallet is ready to use.</p>
             <p>It is permanently stored in the browser's memory,<br/>
                but you must <span style={{color: 'red'}}>write down the 12 word passphrase</span> to recover the wallet.</p>
+            <button
+                onClick={props.button} 
+                style={{ backgroundColor: '#4dd0e1' }}
+                >
+                Open New Wallet
+                </button>
         </div>
     )
 }

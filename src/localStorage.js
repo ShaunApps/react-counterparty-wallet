@@ -15,7 +15,6 @@ export const loadState = () => {
 
 export const saveState = (state) => {
     try {
-        const serializedState = JSON.stringify(state);
         localStorage.setItem('encrypted_pp', state.pp);
         localStorage.setItem('address', state.address);
     } catch (err) {
