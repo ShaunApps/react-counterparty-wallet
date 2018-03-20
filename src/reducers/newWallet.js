@@ -11,12 +11,10 @@ export default function(state = INITIAL_STATE, action) {
     pp = action.payload.pp;
     address = action.payload.address;
     pw = action.payload.pw;
-    console.log("reducer state: " + {pp, pw, address });
     return { ...state, pp: pp, address: address, pw: pw };
   case EXISTING_WALLET:
     pp = action.payload.pp;
     address = action.payload.address;
-    console.log("reducer state: " + pp);
     return { ...state, pp: pp, address: address };
   case LOCAL_STORAGE_CHECK:
     return { ...state, localEncryptedPP: action.payload.encrypted_pp }
