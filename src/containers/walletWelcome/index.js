@@ -21,7 +21,7 @@ class Welcome extends Component {
                 <Existing />
                 <button style={{backgroundColor: 'green'}}>Login</button>
                 <button
-                    style={{ backgroundColor: 'red' }}
+                    style={{ backgroundColor: 'red'}}
                     onClick={this.handleNewWalletClick}
                     >
                 Create New Wallet

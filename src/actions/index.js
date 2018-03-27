@@ -173,8 +173,5 @@ export const fetchSendTransaction = () => {
 }
 
 export const checkSendInputData = (localState) => {
-    console.log(localState.assetName);
-    // const { amount, address, btcFee, password } = localState;
-
-    // console(assetName);
+    
 }
